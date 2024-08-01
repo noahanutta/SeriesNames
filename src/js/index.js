@@ -1,4 +1,4 @@
-import {preloadFonts} from './utils';
+// import {preloadFonts} from './utils';
 import Lenis from '@studio-freight/lenis'
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -189,7 +189,7 @@ const scroll = () => {
             stagger: { each: 0.05, grid: 'auto', from: 'random'},
             scrollTrigger: {
                 trigger: title,
-                start: 'center bottom+=10%',
+                start: 'center bottom+=40%',
                 end: 'bottom center',
                 scrub: 0.9
             }
@@ -269,7 +269,7 @@ const scroll = () => {
 
     });
 
-    const lettersAndSymbols = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '!', '@', '#', '$', '%', '^', '&', '*', '-', '_', '+', '=', ';', ':', '<', '>', ','];
+    const lettersAndSymbols = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
     fx8Titles.forEach(title => {
         
         const chars = title.querySelectorAll('.char');
@@ -435,8 +435,8 @@ const scroll = () => {
             },
             scrollTrigger: {
                 trigger: title,
-                start: 'center bottom',
-                end: 'bottom center-=30%',
+                start: 'top-=200%',
+                end: 'bottom-=110%',
                 scrub: 0.9
             }
         });
@@ -528,11 +528,18 @@ const scroll = () => {
 };
 
 // Preload images and fonts
-preloadFonts('cvn8slu').then(() => {
-    // Remove loader (loading class)
-    document.body.classList.remove('loading');
-    // Lenis (smooth scrolling)
-    initSmoothScrolling();
-    // GSAP Scroll Triggers
-    scroll();
-});
+// preloadFonts('cvn8slu').then(() => {
+//     // Remove loader (loading class)
+//     document.body.classList.remove('loading');
+//     // Lenis (smooth scrolling)
+//     initSmoothScrolling();
+//     // GSAP Scroll Triggers
+//     scroll();
+// });
+
+// INIT
+document.body.classList.remove('loading');
+// Lenis (smooth scrolling)
+initSmoothScrolling();
+// GSAP Scroll Triggers
+scroll();
