@@ -1061,6 +1061,22 @@ const scroll = ()=>{
     scroll();
 });
 
-},{"./utils":"72Dku","@studio-freight/lenis":"ggVJc","gsap":"fPSuC","gsap/ScrollTrigger":"7wnFk","splitting/dist/splitting.css":"3uR7n","splitting/dist/splitting-cells.css":"7jeGL","splitting":"77jB6","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"3uR7n":[function() {},{}],"7jeGL":[function() {},{}]},["5Ztq2","gTMSd"], "gTMSd", "parcelRequire2524")
+},{"./utils":"72Dku","@studio-freight/lenis":"ggVJc","gsap":"fPSuC","gsap/ScrollTrigger":"7wnFk","splitting/dist/splitting.css":"3uR7n","splitting/dist/splitting-cells.css":"7jeGL","splitting":"77jB6","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"72Dku":[function(require,module,exports) {
+// Preload images
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "preloadFonts", ()=>preloadFonts);
+const preloadFonts = (id)=>{
+    return new Promise((resolve)=>{
+        WebFont.load({
+            typekit: {
+                id: id
+            },
+            active: resolve
+        });
+    });
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"3uR7n":[function() {},{}],"7jeGL":[function() {},{}]},["5Ztq2","gTMSd"], "gTMSd", "parcelRequire2524")
 
 //# sourceMappingURL=index2.70862351.js.map
