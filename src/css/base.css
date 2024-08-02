@@ -6,9 +6,13 @@
 
 :root {
 	font-size: 16px;
-	--color-text: #0d0d0d;
+	/* --color-text: #0d0d0d;
 	--color-bg: #fff;
 	--color-link: #0d0d0d;
+	--color-link-hover: #e2151b; */
+	--color-text: #c9bba2;
+	--color-bg: #0a0a0a;
+	--color-link: #c9bba2;
 	--color-link-hover: #e2151b;
 	--page-padding: 1.5rem 2rem;
 }
@@ -282,7 +286,7 @@ main {
 }
 
 .content__title {
-	font-size: 12vw;
+	font-size: 5vw;
 	line-height: 0.8;
 	counter-increment: section;
 	text-align: center;
@@ -307,7 +311,11 @@ main {
 	margin-bottom: 10vh;
 	text-align: center;
 } */
-
+.content:has(.content__title--sides){
+	margin:0 auto;
+	width:100%;
+	max-width: 1000px;
+}
 .content__title--sides {
 	display: grid;
 	grid-template-rows: auto auto;
@@ -526,4 +534,8 @@ main {
 	display: block;
 	margin:0 auto;
 	max-width:1200px;
+}
+.block{
+	background:#b9a891;
+	min-height:80svh;
 }

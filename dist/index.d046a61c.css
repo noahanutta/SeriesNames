@@ -3,9 +3,9 @@
 }
 
 :root {
-  --color-text: #0d0d0d;
-  --color-bg: #fff;
-  --color-link: #0d0d0d;
+  --color-text: #c9bba2;
+  --color-bg: #0a0a0a;
+  --color-link: #c9bba2;
   --color-link-hover: #e2151b;
   --page-padding: 1.5rem 2rem;
   font-size: 16px;
@@ -266,7 +266,7 @@ main {
   counter-increment: section;
   text-align: center;
   gap: 2rem;
-  font-size: 12vw;
+  font-size: 5vw;
   line-height: .8;
   display: grid;
 }
@@ -277,6 +277,12 @@ main {
 
 .content__title--right {
   text-align: right;
+}
+
+.content:has(.content__title--sides) {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .content__title--sides {
@@ -490,5 +496,10 @@ main {
   max-width: 1200px;
   margin: 0 auto;
   display: block;
+}
+
+.block {
+  background: #b9a891;
+  min-height: 80svh;
 }
 /*# sourceMappingURL=index.d046a61c.css.map */
